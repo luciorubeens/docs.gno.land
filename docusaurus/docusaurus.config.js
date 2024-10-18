@@ -3,7 +3,6 @@
 
 const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
-const { remarkGnoPlayground } = require("./static/remark-playground");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -53,9 +52,6 @@ const config = {
           sidebarPath: require.resolve("./sidebars.js"),
           showLastUpdateTime: true,
           editUrl: ({ docPath }) => `https://github.com/gnolang/gno/edit/master/docs/${docPath}`,
-          remarkPlugins: [
-            [remarkGnoPlayground, { lang: 'go' }],
-          ]
         },
         blog: false,
         theme: {

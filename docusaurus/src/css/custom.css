@@ -58,6 +58,15 @@
   --docsearch-muted-color: var(--ifm-color-primary-light);
 
   --input-background: var(--ifm-color-primary-lightest);
+
+  --gno-playground-border: unset;
+  --gno-playground-radius: 1rem;
+  --gno-playground-editor-padding: 0.3rem 0 0 0;
+  --gno-playground-editor-max-height: auto;
+  --gno-playground-editor-background-color: var(--ifm-code-background-color);
+  --gno-playground-editor-font-size: var(--ifm-code-font-size);
+  --gno-playground-editor-font-family: var(--ifm-font-family-monospace);
+  --gno-playground-editor-active-line-background-color: var(--ifm-blockquote-border-color);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -86,6 +95,10 @@
   --docsearch-searchbox-focus-background: var(--docusaurus-highlighted-code-line-bg) !important;
 
   --input-background: var(--ifm-color-primary-dark);
+}
+
+gno-embed-playground {
+  margin-bottom: var(--ifm-leading);
 }
 
 /* Generic */
